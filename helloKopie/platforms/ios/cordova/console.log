@@ -123,3 +123,12 @@ objc[11623]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.a
 2014-02-20 12:26:25.543 HelloWorld[11623:a0b] Finished load of: file:///Users/f-itferial/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/B918352A-FF7A-4333-88DA-43DFC17396F3/HelloWorld.app/www/index.html
 2014-02-20 12:26:28.361 HelloWorld[11623:a0b] Resetting plugins due to page load.
 2014-02-20 12:26:28.366 HelloWorld[11623:a0b] Finished load of: file:///Users/f-itferial/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/B918352A-FF7A-4333-88DA-43DFC17396F3/HelloWorld.app/www/index.html
+objc[13260]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-02-20 14:46:04.511 HelloWorld[13260:a0b] Cannot find executable for CFBundle 0xbca29d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-02-20 14:46:04.525 HelloWorld[13260:a0b] Cannot find executable for CFBundle 0xbaa0dc0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-02-20 14:46:04.596 HelloWorld[13260:a0b] Multi-tasking -> Device: YES, App: YES
+2014-02-20 14:46:04.602 HelloWorld[13260:a0b] Unlimited access to network resources
+2014-02-20 14:46:04.744 HelloWorld[13260:a0b] Resetting plugins due to page load.
+2014-02-20 14:46:04.820 HelloWorld[13260:a0b] Finished load of: file:///Users/f-itferial/Library/Application%20Support/iPhone%20Simulator/7.0.3/Applications/B918352A-FF7A-4333-88DA-43DFC17396F3/HelloWorld.app/www/index.html
+2014-02-20 14:47:15.173 HelloWorld[13260:a0b] Resetting plugins due to page load.
+2014-02-20 14:47:16.216 HelloWorld[13260:a0b] Finished load of: http://www.webqr.com/about.html
