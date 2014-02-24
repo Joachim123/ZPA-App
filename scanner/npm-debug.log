@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ios-deploy' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose cache add [ 'ios-deploy', null ]
+5 verbose cache add name=undefined spec="ios-deploy" args=["ios-deploy",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'ios-deploy',
+6 verbose parsed url   path: 'ios-deploy',
+6 verbose parsed url   href: 'ios-deploy' }
+7 silly lockFile 69149c11-ios-deploy ios-deploy
+8 verbose lock ios-deploy /Users/f-itferial/.npm/69149c11-ios-deploy.lock
+9 silly lockFile 69149c11-ios-deploy ios-deploy
+10 silly lockFile 69149c11-ios-deploy ios-deploy
+11 verbose addNamed [ 'ios-deploy', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 9c508a6b-ios-deploy ios-deploy@
+14 verbose lock ios-deploy@ /Users/f-itferial/.npm/9c508a6b-ios-deploy.lock
+15 silly addNameRange { name: 'ios-deploy', range: '*', hasData: false }
+16 verbose url raw ios-deploy
+17 verbose url resolving [ 'https://registry.npmjs.org/', './ios-deploy' ]
+18 verbose url resolved https://registry.npmjs.org/ios-deploy
+19 info trying registry request attempt 1 at 14:41:35
+20 verbose etag "AC3FBJY9K128Z249UZZJDI861"
+21 http GET https://registry.npmjs.org/ios-deploy
+22 http 304 https://registry.npmjs.org/ios-deploy
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Thu, 20 Feb 2014 13:41:36 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     connection: 'Keep-Alive',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     etag: '"AC3FBJY9K128Z249UZZJDI861"',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     vary: 'Accept' } ]
+24 verbose etag ios-deploy from cache
+25 silly addNameRange number 2 { name: 'ios-deploy', range: '*', hasData: true }
+26 silly addNameRange versions [ 'ios-deploy', [ '1.0.1', '1.0.2', '1.0.3', '1.0.4' ] ]
+27 verbose addNamed [ 'ios-deploy', '1.0.4' ]
+28 verbose addNamed [ '1.0.4', '1.0.4' ]
+29 silly lockFile 8b40e901-ios-deploy-1-0-4 ios-deploy@1.0.4
+30 verbose lock ios-deploy@1.0.4 /Users/f-itferial/.npm/8b40e901-ios-deploy-1-0-4.lock
+31 silly lockFile 8b40e901-ios-deploy-1-0-4 ios-deploy@1.0.4
+32 silly lockFile 8b40e901-ios-deploy-1-0-4 ios-deploy@1.0.4
+33 silly lockFile 9c508a6b-ios-deploy ios-deploy@
+34 silly lockFile 9c508a6b-ios-deploy ios-deploy@
+35 silly resolved [ { name: 'ios-deploy',
+35 silly resolved     version: '1.0.4',
+35 silly resolved     description: 'launch iOS apps iOS devices from the command line (Xcode 4)',
+35 silly resolved     main: 'ios-deploy',
+35 silly resolved     scripts: { preinstall: 'make ios-deploy' },
+35 silly resolved     bin: { 'ios-deploy': './ios-deploy' },
+35 silly resolved     repository: { type: 'git', url: 'https://github.com/phonegap/ios-deploy' },
+35 silly resolved     keywords: [ 'ios-deploy', 'deploy to iOS device' ],
+35 silly resolved     author: { name: 'Greg Hughes' },
+35 silly resolved     license: 'GPLv3',
+35 silly resolved     readme: 'ios-deploy\n==========\nInstall and debug iPhone apps without using Xcode. Designed to work on unjailbroken devices.\n\n## Requirements\n\n* Mac OS X. Tested on Snow Leopard only.\n* You need to have a valid iPhone development certificate installed.\n* Xcode must be installed, along with the SDK for your iOS version.\n\n## Usage\n\n./ios-deploy [OPTION]...\n  -d, --debug                  launch the app in GDB after installation\n  -i, --id <device_id>         the id of the device to connect to\n  -c, --detect                 only detect if the device is connected\n  -b, --bundle <bundle.app>    the path to the app bundle to be installed\n  -a, --args <args>            command line arguments to pass to the app when launching it\n  -t, --timeout <timeout>      number of seconds to wait for a device to be connected\n  -u, --unbuffered             don\'t buffer stdout\n  -g, --gdbargs <args>         extra arguments to pass to GDB when starting the debugger\n  -x, --gdbexec <file>         GDB commands script file\n  -n, --nostart                do not start the app when debugging\n  -v, --verbose                enable verbose output\n  -m, --noinstall              directly start debugging without app install (-d not required) \n  -V, --version                print the executable version\n\n## Demo\n\n* The included demo.app represents the minimum required to get code running on iOS.\n* `make install` will install demo.app to the device.\n* `make debug` will install demo.app and launch a GDB session.\n\n## Notes\n\n* With some modifications, it may be possible to use this without Xcode installed; however, you would need a copy of the relevant DeveloperDiskImage.dmg (included with Xcode). GDB would also run slower as symbols would be downloaded from the device on-the-fly.\n\n\n## Listing Device Ids\n\nDevice Ids are the UDIDs of the iOS devices. From the command line, you can list device ids [this way](http://javierhz.blogspot.com/2012/06/how-to-get-udid-of-iphone-using-shell.html):\n\n        system_profiler SPUSBDataType | sed -n -e \'/iPad/,/Serial/p\' -e \'/iPhone/,/Serial/p\' | grep "Serial Number:" | awk -F ": " \'{print $2}\'\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     bugs: { url: 'https://github.com/phonegap/ios-deploy/issues' },
+35 silly resolved     homepage: 'https://github.com/phonegap/ios-deploy',
+35 silly resolved     _id: 'ios-deploy@1.0.4',
+35 silly resolved     _from: 'ios-deploy@' } ]
+36 info install ios-deploy@1.0.4 into /usr/local/lib
+37 info installOne ios-deploy@1.0.4
+38 info /usr/local/lib/node_modules/ios-deploy unbuild
+39 verbose tar unpack /Users/f-itferial/.npm/ios-deploy/1.0.4/package.tgz
+40 silly lockFile d4189100-ocal-lib-node-modules-ios-deploy tar:///usr/local/lib/node_modules/ios-deploy
+41 verbose lock tar:///usr/local/lib/node_modules/ios-deploy /Users/f-itferial/.npm/d4189100-ocal-lib-node-modules-ios-deploy.lock
+42 silly lockFile 98f5ca31-npm-ios-deploy-1-0-4-package-tgz tar:///Users/f-itferial/.npm/ios-deploy/1.0.4/package.tgz
+43 verbose lock tar:///Users/f-itferial/.npm/ios-deploy/1.0.4/package.tgz /Users/f-itferial/.npm/98f5ca31-npm-ios-deploy-1-0-4-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry README.md
+48 silly gunzTarPerm extractEntry LICENSE
+49 silly gunzTarPerm extractEntry Info.plist
+50 silly gunzTarPerm extractEntry Makefile
+51 silly gunzTarPerm extractEntry Entitlements.plist
+52 silly gunzTarPerm extractEntry ResourceRules.plist
+53 silly gunzTarPerm extractEntry demo.c
+54 silly gunzTarPerm extractEntry ios-deploy.c
+55 silly gunzTarPerm extractEntry MobileDevice.h
+56 silly lockFile d4189100-ocal-lib-node-modules-ios-deploy tar:///usr/local/lib/node_modules/ios-deploy
+57 silly lockFile d4189100-ocal-lib-node-modules-ios-deploy tar:///usr/local/lib/node_modules/ios-deploy
+58 silly lockFile 98f5ca31-npm-ios-deploy-1-0-4-package-tgz tar:///Users/f-itferial/.npm/ios-deploy/1.0.4/package.tgz
+59 silly lockFile 98f5ca31-npm-ios-deploy-1-0-4-package-tgz tar:///Users/f-itferial/.npm/ios-deploy/1.0.4/package.tgz
+60 info preinstall ios-deploy@1.0.4
+61 verbose unsafe-perm in lifecycle false
+62 info ios-deploy@1.0.4 Failed to exec preinstall script
+63 info /usr/local/lib/node_modules/ios-deploy unbuild
+64 info preuninstall ios-deploy@1.0.4
+65 info uninstall ios-deploy@1.0.4
+66 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild ios-deploy@1.0.4
+67 verbose /usr/local/bin,[object Object] binRoot
+68 info postuninstall ios-deploy@1.0.4
+69 error ios-deploy@1.0.4 preinstall: `make ios-deploy`
+69 error Exit status 127
+70 error Failed at the ios-deploy@1.0.4 preinstall script.
+70 error This is most likely a problem with the ios-deploy package,
+70 error not with npm itself.
+70 error Tell the author that this fails on your system:
+70 error     make ios-deploy
+70 error You can get their info via:
+70 error     npm owner ls ios-deploy
+70 error There is likely additional logging output above.
+71 error System Darwin 12.5.0
+72 error command "node" "/usr/local/bin/npm" "install" "-g" "ios-deploy"
+73 error cwd /Users/f-itferial/ZPA-App/scanner
+74 error node -v v0.10.25
+75 error npm -v 1.3.24
+76 error code ELIFECYCLE
+77 verbose exit [ 1, true ]
