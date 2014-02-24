@@ -17,6 +17,10 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="apple-touch-icon" href="starkraft.png">
+			
+		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/html5-qrcode.min.js"></script>	
+		
 
 
         <title>Paper Information</title>
@@ -27,7 +31,26 @@
             <a href="index.html"><img src="img/starkraft.png" width="182" height="55" border=0></a>
         </div>
 
+		
 
+	<div id="reader" class="center" style="width:300px;height:250px;">
+
+	   <video id="html5_qrcode_video" width="300px" height="250px" src="mediastream:3156cb6a-7948-475b-b4d4-86f9a5329a2d"></video>
+		<canvas id="qr-canvas" style="display:none;" height="248px" width="298px"></canvas>
+	</div>	
+		
+	<script type='text/javascript'>
+		$('#reader').html5_qrcode(function(data){
+				 alert(data);
+			},
+			function(error){
+				//show read errors 
+			}, function(videoError){
+				alert('No Cameradevice found!');
+				//the video stream could be opened
+			}
+		);
+	</script>
 
 
 
